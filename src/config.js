@@ -1,5 +1,6 @@
 export default {
   MAX_ATTACHMENT_SIZE: 5000000,
+  STRIPE_KEY: 'pk_test_51HTdDPGtKqgDY7KpZwWw5bitsGaQCEaCLyanRrPQQrvAjDjmSzr67Z2VBcXBGRYVgrTLSBvCpO5ToxZSVJbgXsa800MIzH4uzi',
   s3: {
     REGION: 'us-east-1',
     BUCKET: 'sirwest-notes-app-uploads',
