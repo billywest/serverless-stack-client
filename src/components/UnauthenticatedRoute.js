@@ -4,15 +4,10 @@ import { useAppContext } from '../libs/contextLib';
 import ConditionalWrap from './ConditionalWrap';
 
 function querystring(name, url = window.location.href) {
-  // console.log('name: ', name);
-  // console.log('URL: ', url);
   name = name.replace(/[[]]/g, '\\$&');
-  // console.log('NAME: ', name);
 
   const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)', 'i');
-  // console.log('REGEX: ', regex);
   const results = regex.exec(url);
-  // console.log('RESULTS: ', results);
 
   if (!results) {
     return null;
